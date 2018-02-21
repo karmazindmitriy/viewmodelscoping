@@ -9,12 +9,12 @@ class MyViewModel: ViewModel() {
     }
     
     init {
-        Log.d(TAG, "MyViewModel: created: " + hashCode())
+        Log.d(TAG, "MyViewModel ${hashCode()}: created")
     }
 
     override fun onCleared() {
+        Log.d(TAG, "MyViewModel ${hashCode()}: onCleared")
+        
         super.onCleared()
-
-        Log.d(TAG, "MyViewModel: onCleared: " + hashCode())
     }
 }
